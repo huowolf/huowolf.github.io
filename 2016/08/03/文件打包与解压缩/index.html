@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="zip,rar,tar," />
 
 
 
@@ -84,16 +84,31 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="description" content="1. zip压缩打包
+zip -r -q -o shiyanlou.zip /home/shiyanlou参数含义：     -r: 递归打包包含子目录的全部内容-q: 安静模式
+-o: 输出文件
+
+设置压缩级别为9和1（9最大，1最小），重新打包zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou -x ~/*.zip
+du命令查看打包后的文件大小  d">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/08/02/hello-world/index.html">
+<meta property="og:title" content="文件打包与解压缩">
+<meta property="og:url" content="http://yoursite.com/2016/08/03/文件打包与解压缩/index.html">
 <meta property="og:site_name" content="Huowolf's blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
-<meta property="og:updated_time" content="2016-08-03T09:21:14.532Z">
+<meta property="og:description" content="1. zip压缩打包
+zip -r -q -o shiyanlou.zip /home/shiyanlou参数含义：     -r: 递归打包包含子目录的全部内容-q: 安静模式
+-o: 输出文件
+
+设置压缩级别为9和1（9最大，1最小），重新打包zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou -x ~/*.zip
+du命令查看打包后的文件大小  d">
+<meta property="og:updated_time" content="2016-08-03T15:25:58.611Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="文件打包与解压缩">
+<meta name="twitter:description" content="1. zip压缩打包
+zip -r -q -o shiyanlou.zip /home/shiyanlou参数含义：     -r: 递归打包包含子目录的全部内容-q: 安静模式
+-o: 输出文件
+
+设置压缩级别为9和1（9最大，1最小），重新打包zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou -x ~/*.zip
+du命令查看打包后的文件大小  d">
 
 
 
@@ -111,7 +126,7 @@
   };
 </script>
 
-  <title> Hello World | Huowolf's blog </title>
+  <title> 文件打包与解压缩 | Huowolf's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -281,7 +296,7 @@
             
             
               
-                Hello World
+                文件打包与解压缩
               
             
           </h1>
@@ -293,19 +308,38 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-02T17:40:45+08:00" content="2016-08-02">
-              2016-08-02
+            <time itemprop="dateCreated" datetime="2016-08-03T17:58:33+08:00" content="2016-08-03">
+              2016-08-03
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/08/02/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/02/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2016/08/03/文件打包与解压缩/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/03/文件打包与解压缩/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -315,7 +349,7 @@
 
           
           
-             <span id="/2016/08/02/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+             <span id="/2016/08/03/文件打包与解压缩/" class="leancloud_visitors" data-flag-title="文件打包与解压缩">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -337,15 +371,76 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h2 id="1-zip压缩打包"><a href="#1-zip压缩打包" class="headerlink" title="1. zip压缩打包"></a>1. zip压缩打包</h2><ul>
+<li><code>zip -r -q -o shiyanlou.zip /home/shiyanlou</code><br>参数含义：     -r: 递归打包包含子目录的全部内容<pre><code>-q: 安静模式
+-o: 输出文件
+</code></pre></li>
+<li>设置压缩级别为9和1（9最大，1最小），重新打包<br><code>zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou -x ~/*.zip</code></li>
+<li>du命令查看打包后的文件大小<br>  <code>du -h -d  0 *.zip | sort</code>  <a id="more"></a></li>
+<li>创建加密zip包<br><code>zip -r -e -o shiyanlou_encryption.zip /home/shiyanlou</code></li>
+<li>换行符，在 Windows 为 CR+LF（Carriage-Return+Line-Feed：回车加换行），而在 Linux/Unix 上为 LF（换行）<br>为了在Linux创建的zip文件在Windows上解压以后没有问题，使用 <code>-l</code> 参数<br><code>zip -r -l -o shiyanlou.zip /home/shiyanlou</code></li>
+</ul>
+<h2 id="2-使用unzip解压"><a href="#2-使用unzip解压" class="headerlink" title="2.使用unzip解压"></a>2.使用unzip解压</h2><ul>
+<li>解压到当前目录<br>  unzip shiyanlou.zip</li>
+<li>使用安静模式，将文件解压到指定目录<br>   <code>unzip -q shiyanlou.zip -d ziptest</code></li>
+<li>不想解压只想查看压缩包的内容   <strong>-l</strong><br>  unzip -l shiyanlou.zip</li>
+<li>使用 <strong><code>-O</code></strong> (大写O) 参数指定编码类型：<br>  unzip -O GBK 中文压缩文件.zip</li>
+</ul>
+<h2 id="3-rar打包压缩"><a href="#3-rar打包压缩" class="headerlink" title="3.rar打包压缩"></a>3.rar打包压缩</h2><ul>
+<li>安装rar和unrar工具：<br><code>sudo apt-get install rar unrar</code></li>
+<li>从指定文件或目录创建压缩包<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rar a file.rar  .</div><div class="line">rar a file.rar file*.txt</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>注意： rar 的命令参数没有 -</p>
+<ul>
+<li>从指定压缩包中删除某个文件：<br>  <code>rar d shiyanlou.rar .zshrc</code></li>
+<li>查看不解压文件：<br><code>rar l shiyanlou.rar</code></li>
+<li>全路径解压：<br><code>rar x shiyanlou.rar</code></li>
+<li>去掉路径解压 （解压到指定地点）<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir tmp</div><div class="line">unrar e file.rar tmp/</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="4-tar-打包工具"><a href="#4-tar-打包工具" class="headerlink" title="4.tar 打包工具"></a>4.tar 打包工具</h2><ul>
+<li>创建一个tar 包：<br><code>tar -cf file.tar .</code><br>参数含义： -c 表示创建一个tar包 <pre><code>-f 指定创建的文件名
+</code></pre></li>
+<li><p>解压一个文件（-x参数）到指定路径的已存在目录（-C参数）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir tardir</div><div class="line">tar -xf file.tar -C tardir</div></pre></td></tr></table></figure>
+</li>
+<li><p>只查看不解包文件 ：<strong>-t</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -tf shiyanlou.tar</div></pre></td></tr></table></figure>
+</li>
+<li><p>保留文件属性和跟随链接：<br><code>tar -cphf etc.tar /etc</code></p>
+</li>
+<li><p>gzip压缩</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -czf shiyanlou.tar.gz ~</div></pre></td></tr></table></figure>
+</li>
+<li><p>解压*.tar.gz文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -xzf shiyanlou.tar.gz</div></pre></td></tr></table></figure>
+</li>
+<li><p>其他压缩工具</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>压缩文件格式</th>
+<th>参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*.tar.gz</td>
+<td>-z</td>
+</tr>
+<tr>
+<td>*.tar.xz</td>
+<td>-J</td>
+</tr>
+<tr>
+<td>*.tar.bz2</td>
+<td>-j</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -365,18 +460,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/zip-rar-tar/" rel="tag">#zip,rar,tar</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/08/02/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/08/03/文件打包与解压缩/" rel="prev" title="文件打包与解压缩">
-                文件打包与解压缩 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -425,8 +526,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/08/02/hello-world/"
-           data-title="Hello World" data-url="http://yoursite.com/2016/08/02/hello-world/">
+      <div class="ds-thread" data-thread-key="2016/08/03/文件打包与解压缩/"
+           data-title="文件打包与解压缩" data-url="http://yoursite.com/2016/08/03/文件打包与解压缩/">
       </div>
     
   </div>
@@ -517,7 +618,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-zip压缩打包"><span class="nav-number">1.</span> <span class="nav-text">1. zip压缩打包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-使用unzip解压"><span class="nav-number">2.</span> <span class="nav-text">2.使用unzip解压</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-rar打包压缩"><span class="nav-number">3.</span> <span class="nav-text">3.rar打包压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-tar-打包工具"><span class="nav-number">4.</span> <span class="nav-text">4.tar 打包工具</span></a></li></ol></div>
             
           </div>
         </section>
