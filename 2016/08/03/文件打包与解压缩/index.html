@@ -100,7 +100,7 @@ zip -r -q -o shiyanlou.zip /home/shiyanlou参数含义：     -r: 递归打包�
 
 设置压缩级别为9和1（9最大，1最小），重新打包zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou -x ~/*.zip
 du命令查看打包后的文件大小  d">
-<meta property="og:updated_time" content="2016-08-03T15:25:58.611Z">
+<meta property="og:updated_time" content="2016-08-04T02:47:24.640Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="文件打包与解压缩">
 <meta name="twitter:description" content="1. zip压缩打包
@@ -381,10 +381,10 @@ du命令查看打包后的文件大小  d">
 <li>换行符，在 Windows 为 CR+LF（Carriage-Return+Line-Feed：回车加换行），而在 Linux/Unix 上为 LF（换行）<br>为了在Linux创建的zip文件在Windows上解压以后没有问题，使用 <code>-l</code> 参数<br><code>zip -r -l -o shiyanlou.zip /home/shiyanlou</code></li>
 </ul>
 <h2 id="2-使用unzip解压"><a href="#2-使用unzip解压" class="headerlink" title="2.使用unzip解压"></a>2.使用unzip解压</h2><ul>
-<li>解压到当前目录<br>  unzip shiyanlou.zip</li>
+<li>解压到当前目录<br> <code>unzip shiyanlou.zip</code></li>
 <li>使用安静模式，将文件解压到指定目录<br>   <code>unzip -q shiyanlou.zip -d ziptest</code></li>
-<li>不想解压只想查看压缩包的内容   <strong>-l</strong><br>  unzip -l shiyanlou.zip</li>
-<li>使用 <strong><code>-O</code></strong> (大写O) 参数指定编码类型：<br>  unzip -O GBK 中文压缩文件.zip</li>
+<li>不想解压只想查看压缩包的内容   <strong>-l</strong><br> <code>unzip -l shiyanlou.zip</code></li>
+<li>使用 <strong><code>-O</code></strong> (大写O) 参数指定编码类型：<br><code>unzip -O GBK 中文压缩文件.zip</code></li>
 </ul>
 <h2 id="3-rar打包压缩"><a href="#3-rar打包压缩" class="headerlink" title="3.rar打包压缩"></a>3.rar打包压缩</h2><ul>
 <li>安装rar和unrar工具：<br><code>sudo apt-get install rar unrar</code></li>
