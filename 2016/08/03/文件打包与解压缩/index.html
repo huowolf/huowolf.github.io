@@ -85,30 +85,36 @@
 
 
 <meta name="description" content="1. zip压缩打包
-zip -r -q -o shiyanlou.zip /home/shiyanlou参数含义：     -r: 递归打包包含子目录的全部内容-q: 安静模式
+zip -r -q -o shiyanlou.zip /home/shiyanlou参数含义：     -r: 递归打包包含子目录的全部内容
+-q: 安静模式
 -o: 输出文件
 
 设置压缩级别为9和1（9最大，1最小），重新打包zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou -x ~/*.zip
-du命令查看打包后的文件大小  d">
+
+du命令查看打包后的文件大小">
 <meta property="og:type" content="article">
 <meta property="og:title" content="文件打包与解压缩">
 <meta property="og:url" content="http://yoursite.com/2016/08/03/文件打包与解压缩/index.html">
 <meta property="og:site_name" content="Huowolf's blog">
 <meta property="og:description" content="1. zip压缩打包
-zip -r -q -o shiyanlou.zip /home/shiyanlou参数含义：     -r: 递归打包包含子目录的全部内容-q: 安静模式
+zip -r -q -o shiyanlou.zip /home/shiyanlou参数含义：     -r: 递归打包包含子目录的全部内容
+-q: 安静模式
 -o: 输出文件
 
 设置压缩级别为9和1（9最大，1最小），重新打包zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou -x ~/*.zip
-du命令查看打包后的文件大小  d">
-<meta property="og:updated_time" content="2016-08-04T02:47:24.640Z">
+
+du命令查看打包后的文件大小">
+<meta property="og:updated_time" content="2016-08-04T03:04:22.849Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="文件打包与解压缩">
 <meta name="twitter:description" content="1. zip压缩打包
-zip -r -q -o shiyanlou.zip /home/shiyanlou参数含义：     -r: 递归打包包含子目录的全部内容-q: 安静模式
+zip -r -q -o shiyanlou.zip /home/shiyanlou参数含义：     -r: 递归打包包含子目录的全部内容
+-q: 安静模式
 -o: 输出文件
 
 设置压缩级别为9和1（9最大，1最小），重新打包zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou -x ~/*.zip
-du命令查看打包后的文件大小  d">
+
+du命令查看打包后的文件大小">
 
 
 
@@ -372,13 +378,19 @@ du命令查看打包后的文件大小  d">
 
       
         <h2 id="1-zip压缩打包"><a href="#1-zip压缩打包" class="headerlink" title="1. zip压缩打包"></a>1. zip压缩打包</h2><ul>
-<li><code>zip -r -q -o shiyanlou.zip /home/shiyanlou</code><br>参数含义：     -r: 递归打包包含子目录的全部内容<pre><code>-q: 安静模式
+<li><p><code>zip -r -q -o shiyanlou.zip /home/shiyanlou</code><br>参数含义：     -r: 递归打包包含子目录的全部内容</p>
+<pre><code>-q: 安静模式
 -o: 输出文件
 </code></pre></li>
-<li>设置压缩级别为9和1（9最大，1最小），重新打包<br><code>zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou -x ~/*.zip</code></li>
-<li>du命令查看打包后的文件大小<br>  <code>du -h -d  0 *.zip | sort</code>  <a id="more"></a></li>
-<li>创建加密zip包<br><code>zip -r -e -o shiyanlou_encryption.zip /home/shiyanlou</code></li>
-<li>换行符，在 Windows 为 CR+LF（Carriage-Return+Line-Feed：回车加换行），而在 Linux/Unix 上为 LF（换行）<br>为了在Linux创建的zip文件在Windows上解压以后没有问题，使用 <code>-l</code> 参数<br><code>zip -r -l -o shiyanlou.zip /home/shiyanlou</code></li>
+<li><p>设置压缩级别为9和1（9最大，1最小），重新打包<br><code>zip -r -9 -q -o shiyanlou_9.zip /home/shiyanlou -x ~/*.zip</code></p>
+</li>
+<li><p>du命令查看打包后的文件大小<br>  <code>du -h -d  0 *.zip | sort</code></p>
+ <a id="more"></a>
+</li>
+<li><p>创建加密zip包<br><code>zip -r -e -o shiyanlou_encryption.zip /home/shiyanlou</code></p>
+</li>
+<li><p>换行符，在 Windows 为 CR+LF（Carriage-Return+Line-Feed：回车加换行），而在 Linux/Unix 上为 LF（换行）<br>为了在Linux创建的zip文件在Windows上解压以后没有问题，使用 <code>-l</code> 参数<br><code>zip -r -l -o shiyanlou.zip /home/shiyanlou</code></p>
+</li>
 </ul>
 <h2 id="2-使用unzip解压"><a href="#2-使用unzip解压" class="headerlink" title="2.使用unzip解压"></a>2.使用unzip解压</h2><ul>
 <li>解压到当前目录<br> <code>unzip shiyanlou.zip</code></li>
